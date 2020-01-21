@@ -1,10 +1,11 @@
-$dfr-config: () !default;
+@forward 'config/border';
+@forward 'config/breakpoint';
+@forward 'config/button';
+@forward 'config/color';
+@forward 'config/container';
+@forward 'config/font';
+@forward 'config/heading';
+@forward 'config/spacing';
 
-@import 'config/border';
-@import 'config/breakpoint';
-@import 'config/button';
-@import 'config/color';
-@import 'config/container';
-@import 'config/font';
-@import 'config/heading';
-@import 'config/spacing';
+$super-map: () !default;
+

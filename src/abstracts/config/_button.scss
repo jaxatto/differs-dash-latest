@@ -1,4 +1,4 @@
-$dfr-config: deep-map-merge(
+$super-map: deep-map-merge(
   (
     'spacing': (
       'button': (
@@ -25,6 +25,6 @@ $dfr-config: deep-map-merge(
       )
     )
   ),
-  $dfr-config,
+  $super-map,
   true
 );

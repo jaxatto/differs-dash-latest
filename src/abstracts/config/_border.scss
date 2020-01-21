@@ -1,4 +1,6 @@
-$dfr-config: deep-map-merge(
+@use "../variables" as *;
+
+$super-map: deep-map-merge(
   (
     'border': (
       'width': 2px,
@@ -14,6 +16,6 @@ $dfr-config: deep-map-merge(
       )
     )
   ),
-  $dfr-config,
+  $super-map,
   true
 );
