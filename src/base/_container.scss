@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 %dfr-container-common {
   padding-right: convert-unit($dfr-grid-gutter, 'rem');
   padding-left: convert-unit($dfr-grid-gutter, 'rem');

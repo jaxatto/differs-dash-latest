@@ -1,6 +1,11 @@
+@use '../functions/' as *;
+@use '../variables' as *;
+@use '../functions/helpers/' as *;
+@use 'map' as *;
+
 // stylelint-disable value-keyword-case
 // stylelint-disable function-comma-newline-after
-$super-map: deep-map-merge(
+$dfr-config: deep-map-merge(
   (
     'font': (
       'family': (
@@ -22,7 +27,7 @@ $super-map: deep-map-merge(
       )
     )
   ),
-  $super-map,
+  $dfr-config,
   true
 );
 // stylelint-enable value-keyword-case

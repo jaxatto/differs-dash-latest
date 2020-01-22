@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .group {
   @include margin('m', 'bottom');
 

@@ -12,7 +12,7 @@
 //
 // @return String
 // ---------------------------------------------------------
-@function str-replace ($string, $search, $replace: '') {
+@function str-replace($string, $search, $replace: '') {
   @if type-of($string) != 'string' {
     @error 'The argument $string: `#{$string}` is of incorrect type: `#{type-of($string)}`. Type of `String` is required!';
   }

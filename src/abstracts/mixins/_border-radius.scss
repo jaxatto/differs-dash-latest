@@ -23,6 +23,9 @@
 // Since 'top' means top-right and top-left, it would output:
 // top-right, top-left, top-left
 // ---------------------------------------------------------
+
+@use '../functions/' as *;
+
 @mixin border-radius ($value, $properties: ()) {
   @if type-of($value) == 'string' {
     $value: get('border.radius.#{$value}');

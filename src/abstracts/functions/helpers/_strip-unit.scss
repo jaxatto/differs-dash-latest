@@ -10,7 +10,7 @@
 //
 // @return Number
 // ---------------------------------------------------------
-@function strip-unit ($number) {
+@function strip-unit($number) {
   @if type-of($number) != 'number' {
     @error 'The argument $number: `#{$number}` is of incorrect type: `#{type-of($number)}`. Type of `Number` is required!';
   }

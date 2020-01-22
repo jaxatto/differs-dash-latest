@@ -11,7 +11,10 @@
 //
 // @return String
 // ---------------------------------------------------------
-@function grid-calc ($number, $columns: $dfr-grid-columns) {
+@use 'helpers' as *;
+@use '../variables' as *;
+
+@function grid-calc($number, $columns: $dfr-grid-columns) {
   @if type-of($number) != 'number' {
     @error 'The argument $number: `#{$number}` is of incorrect type: `#{type-of($number)}`. Type of `Number` is required!';
   }

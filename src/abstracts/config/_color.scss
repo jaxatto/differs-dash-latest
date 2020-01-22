@@ -1,4 +1,9 @@
-$super-map: deep-map-merge(
+@use '../functions/' as *;
+@use '../variables' as *;
+@use '../functions/helpers/' as *;
+@use 'map' as *;
+
+$dfr-config: deep-map-merge(
   (
     'color': (
       'dark':         $dfr--base-color-dark,
@@ -8,6 +13,6 @@ $super-map: deep-map-merge(
       'light':        $dfr--base-color-light
     )
   ),
-  $super-map,
+  $dfr-config,
   true
 );

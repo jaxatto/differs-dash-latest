@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 // stylelint-disable font-weight-notation
 %dfr-headings-common {
   font-weight: get('heading.font.weight');

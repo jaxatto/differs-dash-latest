@@ -14,7 +14,12 @@
 //
 // @return Anything
 // ---------------------------------------------------------
-@function get ($key, $map: $super-map) {
+
+@use 'helpers' as *;
+@use '../variables' as *;
+@use '../config/map' as *;
+
+@function get($key, $map: $dfr-config) {
   $keys: str-explode($key, '.');
 
   @if not deep-map-check($map, $keys...) {

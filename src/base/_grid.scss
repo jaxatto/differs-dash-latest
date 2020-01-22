@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 // Use predefined grid gutter and convert it to `rem` unit
 $dfr-grid-gutter-rem: convert-unit($dfr-grid-gutter, 'rem');
 

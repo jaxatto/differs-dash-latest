@@ -1,6 +1,10 @@
-@use "../variables" as *;
+@use '../functions/' as *;
+@use '../variables' as *;
+@use '../functions/helpers/' as *;
+@use 'map' as *;
 
-$super-map: deep-map-merge(
+
+$dfr-config: deep-map-merge(
   (
     'border': (
       'width': 2px,
@@ -16,6 +20,6 @@ $super-map: deep-map-merge(
       )
     )
   ),
-  $super-map,
+  $dfr-config,
   true
 );

@@ -1,4 +1,7 @@
-@mixin button-sizes ($sizes) {
+@use '../../functions/' as *;
+@use '../spacing' as *;
+
+@mixin button-sizes($sizes) {
   @each $key, $value in $sizes {
     @if $key != 'm' {
       &.is-#{$key} {

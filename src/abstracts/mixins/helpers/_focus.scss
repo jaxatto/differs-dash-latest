@@ -1,3 +1,5 @@
+@use '../../functions/' as *;
+
 @mixin focus {
   &:focus {
     outline: 0;

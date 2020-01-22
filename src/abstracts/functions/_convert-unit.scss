@@ -13,7 +13,10 @@
 //
 // @return List
 // ---------------------------------------------------------
-@function convert-unit ($number, $unit, $base: $dfr--base-fontSize) {
+@use 'helpers' as *;
+@use '../variables' as *;
+
+@function convert-unit($number, $unit, $base: $dfr--base-fontSize) {
   @if type-of($number) != 'number' {
     @error 'The argument $number: `#{$number}` is of incorrect type: `#{type-of($number)}`. Type of `Number` is required!';
   }

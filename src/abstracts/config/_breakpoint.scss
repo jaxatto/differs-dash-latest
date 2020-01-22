@@ -1,4 +1,9 @@
-$super-map: deep-map-merge(
+@use '../functions/' as *;
+@use '../variables' as *;
+@use '../functions/helpers/' as *;
+@use 'map' as *;
+
+$dfr-config: deep-map-merge(
   (
     'breakpoint': (
       'xs': null,
@@ -8,6 +13,6 @@ $super-map: deep-map-merge(
       'xl': 1200px
     )
   ),
-  $super-map,
+  $dfr-config,
   true
 );

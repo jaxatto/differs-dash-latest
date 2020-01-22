@@ -1,4 +1,4 @@
-@function yiq-test ($color, $threshold) {
+@function yiq-test($color, $threshold) {
   $r: red($color);
   $g: green($color);
   $b: blue($color);
@@ -8,6 +8,6 @@
   @return if($yiq >= $threshold, true, false);
 }
 
-@function yiq ($base, $dark: $dfr-yiq-color-dark, $light: $dfr-yiq-color-light, $threshold: $dfr-yiq-threshold) {
+@function yiq($base, $dark: $dfr-yiq-color-dark, $light: $dfr-yiq-color-light, $threshold: $dfr-yiq-threshold) {
   @return if(yiq-test($base, $threshold), $dark, $light);
 }

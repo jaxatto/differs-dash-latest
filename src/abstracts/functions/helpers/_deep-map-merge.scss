@@ -1,4 +1,4 @@
-@function deep-map-merge ($map, $maps...) {
+@function deep-map-merge($map, $maps...) {
   $last: nth($maps, -1);
   $deep: $last == true;
   $max: if($deep, length($maps) - 1, length($maps));

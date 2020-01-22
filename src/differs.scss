@@ -1,10 +1,5 @@
-// Core
-@use 'abstracts/variables';
-@use 'abstracts/helper-functions';
-@use 'abstracts/config';
-@use 'abstracts/core-functions';
-@use 'abstracts/mixins';
-@use 'abstracts/helper-mixins';
+// Abstracts
+@use 'abstracts';
 
 // Base
 @use 'base';

@@ -10,7 +10,7 @@
 //
 // @return String
 // ---------------------------------------------------------
-@function str-capitalize ($string) {
+@function str-capitalize($string) {
   @if type-of($string) != 'string' {
     @error 'The argument $string: `#{$string}` is of incorrect type: `#{type-of($string)}`. Type of `String` is required!';
   }
